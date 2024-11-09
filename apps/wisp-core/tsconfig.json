@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                             // Modern JavaScript output
+    "module": "commonjs",                        // CommonJS module system (for Node.js)
+    "lib": ["ES6"],                              // Standard libraries; you may need "DOM" for web-related code
+    "declaration": true,                         // Generates .d.ts declaration files (useful for libraries)
+    "declarationMap": true,                      // Generate declaration map files (useful for debugging types)
+    "sourceMap": true,                           // Source maps for debugging
+    "strict": true,                              // Enable all strict type-checking options
+    "esModuleInterop": true,                     // Allow default imports from modules with no default export
+    "skipLibCheck": true,                        // Skip type checking of declaration files (speeds up build)
+    "forceConsistentCasingInFileNames": true,    // Ensure file name casing consistency across the project
+    "resolveJsonModule": true,                   // Allow importing JSON files as modules
+    "noImplicitAny": true,                       // Disallow usage of "any" type unless explicitly declared
+    "noUnusedLocals": true,                      // Flag unused local variables
+    "noUnusedParameters": true,                  // Flag unused function parameters
+    "noImplicitReturns": true,                   // Require return types to be explicitly defined in functions
+    "noFallthroughCasesInSwitch": true,          // Disallow fallthrough between switch cases
+    "outDir": "./dist",                          // Output directory for compiled files
+    "rootDir": ".",                              // Root directory for TypeScript source files
+  },
+  "exclude": [
+    "node_modules",                              // Exclude node_modules folder
+    "dist"                                       // Exclude dist folder (where compiled output goes)
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "whisper",
+  "private": "true",
+  "devDependencies": {
+    "dotenv-cli": "^7.4.2",
+    "prettier": "^3.3.3"
+  },
+  "author": "Anton Palermo <hello@antonpalermo.com>",
+  "license": "MIT"
+}

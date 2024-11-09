@@ -1,0 +1,29 @@
+{
+  "name": "app-core",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dotnev": "",
+    "dev:tsc": "tsc -w",
+    "dev:nodemon": "set DEBUG=wisp-core:app & nodemon ./dist/bin/www.js",
+    "dev": "dotenv -e ../../.env -- concurrently \"pnpm dev:tsc\" \"pnpm dev:nodemon\""
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "debug": "^4.3.7",
+    "express": "^4.21.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/debug": "^4.1.12",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.9.0",
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.3"
+  },
+  "author": "Anton Palermo <hello@antonpalermo.com>",
+  "license": "MIT"
+}
