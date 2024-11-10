@@ -1,12 +1,14 @@
 {
-  "name": "app-core",
+  "name": "wisp-core",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dotnev": "",
     "dev:tsc": "tsc -w",
     "dev:nodemon": "set DEBUG=wisp-core:app & nodemon ./dist/bin/www.js",
-    "dev": "dotenv -e ../../.env -- concurrently \"pnpm dev:tsc\" \"pnpm dev:nodemon\""
+    "dev": "dotenv -e ../../.env -- concurrently \"pnpm dev:tsc\" \"pnpm dev:nodemon\"",
+    "build": "tsc",
+    "start": "set DEBUG=wisp-core:app && node ./dist/bin/www.js"
   },
   "dependencies": {
     "cookie-parser": "^1.4.7",
