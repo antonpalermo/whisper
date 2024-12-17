@@ -8,13 +8,14 @@
     "dev:nodemon": "set DEBUG=wisp-core:app & nodemon ./dist/bin/www.js",
     "dev": "dotenv -e ../../.env -- concurrently \"pnpm dev:tsc\" \"pnpm dev:nodemon\"",
     "build": "tsc",
-    "start": "set DEBUG=wisp-core:app && node ./dist/bin/www.js"
+    "start": "set DEBUG=wisp-core:app && ts-node ./bin/www.ts"
   },
   "dependencies": {
     "cookie-parser": "^1.4.7",
     "debug": "^4.3.7",
     "express": "^4.21.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.7",

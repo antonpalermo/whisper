@@ -2,7 +2,8 @@
   "name": "whisper",
   "private": "true",
   "scripts": {
-    "dev": "turbo dev"
+    "dev": "turbo dev",
+    "start": "turbo start"
   },
   "devDependencies": {
     "dotenv-cli": "^7.4.2",
@@ -11,5 +12,5 @@
   },
   "author": "Anton Palermo <hello@antonpalermo.com>",
   "license": "MIT",
-  "packageManager": "^pnpm@9.14.0"
+  "packageManager": "pnpm@9.14.0"
 }
