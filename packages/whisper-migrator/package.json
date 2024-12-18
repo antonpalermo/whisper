@@ -1,0 +1,17 @@
+{
+  "name": "@packages/whisper-migrator",
+  "version": "1.0.0",
+  "private": "true",
+  "scripts": {
+    "with-env": "dotenv -e ../../.env",
+    "db:migrate": "pnpm with-env -- prisma migrate",
+    "db:push": "pnpm with-env -- prisma db push"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "prisma": "^6.1.0"
+  },
+  "dependencies": {
+    "@prisma/client": "6.1.0"
+  }
+}
